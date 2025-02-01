@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Liter&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1: #d8d7d4;
+    --cor2: #8ad6db;
+    --cor3: #2cd7dc;
+    --cor4: #135e61;
+    --fonte1: "Lilita One", serif;
+    --fonte2: "Liter", serif;
+}
+
+html, body {
+    min-height: 100vh;
+    color: darkslategray;
+    font-size: 1.1em;
+    font-family: var(--fonte2);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    text-align: center;
+    padding: 30px;
+}
+
+header > h1 {
+    color: whitesmoke;
+    font: normal 400 2.5em var(--fonte1);
+    font-variant: small-caps;
+}
+
+header a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+header a:hover {
+    background-color: var(--cor4);
+    padding: 4px;
+    border-radius: 15px;
+    transition: 0.5s
+}
+
+section.normal h2 {
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    padding: 5px;
+    
+    margin-bottom: 6px;
+    border-radius: 15px;
+
+    font: normal 400 1.5em var(--fonte1)
+}
+
+section.normal {
+    background-color: var(--cor1);
+    padding: 1.2em;
+}
+
+section.normal p {
+    margin-bottom: 1.5em;
+    margin-left: 6px;
+}
+
+div {
+    display: inline-block;
+    background-color: rgba(87, 83, 83, 0.548);
+    color: white;
+    
+    width: 60vw;
+    padding: 20px;
+    line-height: 2.2em;
+
+    border-radius: 15px;
+
+}
+
+section.imagem {
+    padding: 20px;
+    box-shadow: inset 1px 2px 12px 1px black;
+    background-size: cover;
+}
+
+section.imagem h2 {
+    font: normal 400 1.5em var(--fonte1);
+}
+
+#img001 {
+    background-image: url('../imagens/img-de-fundo001.jpg');
+    background-position: left center;
+    background-attachment: fixed;
+}
+
+#img002 {
+    background-image: url('../imagens/img-de-fundo002.jpg');
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+footer {
+    background-color: rgb(29, 122, 122);
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    background-color: var(--cor4);
+    transition: 0.5s;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+span {
+    background-color: #528507;
+}
